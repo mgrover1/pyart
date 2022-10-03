@@ -86,7 +86,7 @@ starting by creating a list of the colormaps available in Py-ART
         fig, axs = plt.subplots(nrows=nrows, figsize=(6.4, figh))
         fig.subplots_adjust(top=1-.35/figh, bottom=.15/figh, left=0.4, right=0.99)
 
-        axs[0].set_title(cmap_category + ' colormaps', fontsize=14)
+        axs[0].set_title(cmap_category + ' Colormaps', fontsize=14)
 
         for ax, cmap_name in zip(axs, cmap_list):
             ax.imshow(gradient, aspect='auto', cmap=f"pyart_{cmap_name}")
@@ -123,7 +123,7 @@ possible.
 
 
 .. image-sg:: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_001.png
-   :alt: Colorblind Friendly colormaps
+   :alt: Colorblind Friendly Colormaps
    :srcset: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_001.png
    :class: sphx-glr-single-img
 
@@ -149,7 +149,7 @@ the lightness value increases monotonically through the colormaps.
 
 
 .. image-sg:: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_002.png
-   :alt: Sequential colormaps
+   :alt: Sequential Colormaps
    :srcset: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_002.png
    :class: sphx-glr-single-img
 
@@ -178,7 +178,7 @@ values. This is when the 0 value is meaningful (ex. velocity)
 
 
 .. image-sg:: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_003.png
-   :alt: Diverging colormaps
+   :alt: Diverging Colormaps
    :srcset: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_003.png
    :class: sphx-glr-single-img
 
@@ -210,7 +210,7 @@ reflectivity field
 
 
 .. image-sg:: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_004.png
-   :alt: Field-specific  colormaps
+   :alt: Field-specific  Colormaps
    :srcset: /examples/plotting/images/sphx_glr_plot_choose_a_colormap_004.png
    :class: sphx-glr-single-img
 
@@ -287,7 +287,7 @@ Setup a display to plot the data
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.355 seconds)
+   **Total running time of the script:** ( 0 minutes  2.796 seconds)
 
 
 .. _sphx_glr_download_examples_plotting_plot_choose_a_colormap.py:
