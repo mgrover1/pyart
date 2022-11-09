@@ -5,14 +5,14 @@
 
 Computation times
 =================
-**00:15.319** total execution time for **examples_retrieve** files:
+**00:16.885** total execution time for **examples_retrieve** files:
 
 +-------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_retrieve_plot_composite_reflectivity.py` (``plot_composite_reflectivity.py``) | 00:04.415 | 0.0 MB |
+| :ref:`sphx_glr_examples_retrieve_plot_composite_reflectivity.py` (``plot_composite_reflectivity.py``) | 00:05.103 | 0.0 MB |
 +-------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_retrieve_plot_vad.py` (``plot_vad.py``)                                       | 00:04.205 | 0.0 MB |
+| :ref:`sphx_glr_examples_retrieve_plot_vad.py` (``plot_vad.py``)                                       | 00:04.393 | 0.0 MB |
 +-------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_retrieve_plot_hydrometeor.py` (``plot_hydrometeor.py``)                       | 00:03.422 | 0.0 MB |
+| :ref:`sphx_glr_examples_retrieve_plot_hydrometeor.py` (``plot_hydrometeor.py``)                       | 00:03.835 | 0.0 MB |
 +-------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_retrieve_plot_column_subset.py` (``plot_column_subset.py``)                   | 00:03.277 | 0.0 MB |
+| :ref:`sphx_glr_examples_retrieve_plot_column_subset.py` (``plot_column_subset.py``)                   | 00:03.554 | 0.0 MB |
 +-------------------------------------------------------------------------------------------------------+-----------+--------+
