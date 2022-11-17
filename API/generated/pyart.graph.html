@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>pyart.graph &#8212; Py-ART 1.11.1.post412 documentation</title>
+    <title>pyart.graph &#8212; Py-ART 1.11.1.post418 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -21,6 +21,7 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
@@ -309,6 +310,11 @@
      <li class="toctree-l3">
       <a class="reference internal" href="pyart.core.Radar.add_field_like.html">
        pyart.core.Radar.add_field_like
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="pyart.core.Radar.add_filter.html">
+       pyart.core.Radar.add_filter
       </a>
      </li>
      <li class="toctree-l3">
@@ -1247,6 +1253,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="pyart.retrieve.compute_snr.html">
      pyart.retrieve.compute_snr
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pyart.retrieve.conv_strat_yuter.html">
+     pyart.retrieve.conv_strat_yuter
     </a>
    </li>
    <li class="toctree-l2">
@@ -2193,6 +2204,11 @@
      </li>
     </ul>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pyart.graph.plot_convstrat_scheme.html">
+     pyart.graph.plot_convstrat_scheme
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -2954,6 +2970,8 @@ colormaps are available within matplotlib with names ‘pyart_COLORMAP’:</p>
 <li><p>LangRainbow12</p></li>
 <li><p>HomeyerRainbow</p></li>
 <li><p>balance</p></li>
+<li><p>ChaseSpectral</p></li>
+<li><p>SpectralExtended</p></li>
 </ul>
 </div></blockquote>
 <p class="rubric">Classes</p>
@@ -2980,6 +2998,18 @@ colormaps are available within matplotlib with names ‘pyart_COLORMAP’:</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="pyart.graph.RadarMapDisplayBasemap.html#pyart.graph.RadarMapDisplayBasemap" title="pyart.graph.RadarMapDisplayBasemap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadarMapDisplayBasemap</span></code></a>(radar[, shift])</p></td>
 <td><p>A display object for creating plots on a geographic map from data in a Radar object.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Functions</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="pyart.graph.plot_convstrat_scheme.html#pyart.graph.plot_convstrat_scheme" title="pyart.graph.plot_convstrat_scheme"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_convstrat_scheme</span></code></a>(always_core_thres, ...)</p></td>
+<td><p>Plots the scheme used in the convective stratiform classification</p></td>
 </tr>
 </tbody>
 </table>
