@@ -223,10 +223,10 @@
   <span><i class="fa-fw fa fa-tags"></i> </span
   >
    
-  <a href="../../blog/tag/matplotlib.html">matplotlib</a>   
   <a href="../../blog/tag/nexrad.html">NEXRAD</a>   
-  <a href="../../blog/tag/severe-weather.html">severe-weather</a>   
-  <a href="../../blog/tag/visualization.html">visualization</a>  
+  <a href="../../blog/tag/visualization.html">visualization</a>   
+  <a href="../../blog/tag/matplotlib.html">matplotlib</a>   
+  <a href="../../blog/tag/severe-weather.html">severe-weather</a>  
 </li>
  
 </ul>
@@ -345,8 +345,8 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#add-the-insterstate-date-as-a-feature">
-       Add the Insterstate Date as a feature
+      <a class="reference internal nav-link" href="#add-the-interstate-date-as-a-feature">
+       Add the Interstate Date as a feature
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -441,7 +441,7 @@ which includes the following radar imagery, which was produced using data from t
 </section>
 <section id="reproducing-event-images">
 <h3>Reproducing Event Images<a class="headerlink" href="#reproducing-event-images" title="Permalink to this headline">#</a></h3>
-<p>What if we wanted to reproduce these plots, using free, open-source software, using open data? We can do this usign Py-ART! We encourage people check out the <a class="reference external" href="https://projectpythia.org/radar-cookbook/">Radar Cookbook</a>, which walks through how to get started with the software stack, and details how to work with NEXRAD data, as we are in this case.</p>
+<p>What if we wanted to reproduce these plots, using free, open-source software, using open data? We can do this using Py-ART. We encourage people check out the <a class="reference external" href="https://projectpythia.org/radar-cookbook/">Radar Cookbook</a>, which walks through how to get started with the software stack, and details how to work with NEXRAD data, as we are in this case.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://projectpythia.org/radar-cookbook/notebooks/example-workflows/moore-oklahoma-tornado.html">Link to NEXRAD Data from Moore, Oklahoma Tornado Case</a></p></li>
 </ul>
@@ -458,18 +458,19 @@ which includes the following radar imagery, which was produced using data from t
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyart</span>
-<span class="kn">import</span> <span class="nn">fsspec</span>
-<span class="kn">from</span> <span class="nn">metpy.plots</span> <span class="kn">import</span> <span class="n">USCOUNTIES</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
 <span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
 <span class="kn">import</span> <span class="nn">cartopy.feature</span> <span class="k">as</span> <span class="nn">cfeature</span>
 <span class="kn">import</span> <span class="nn">cartopy.io.shapereader</span> <span class="k">as</span> <span class="nn">shpreader</span>
 <span class="kn">from</span> <span class="nn">cartopy.feature</span> <span class="kn">import</span> <span class="n">ShapelyFeature</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">fsspec</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">metpy.plots</span> <span class="kn">import</span> <span class="n">USCOUNTIES</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pyart</span>
 
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 </pre></div>
@@ -510,7 +511,7 @@ which includes the following radar imagery, which was produced using data from t
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100 25.7M    0 25.7M    0     0  3707k      0 --:--:--  0:00:07 --:--:-- 3742k
+100 25.7M    0 25.7M    0     0  21.0M      0 --:--:--  0:00:01 --:--:-- 21.0M
 Archive:  tl_2016_us_primaryroads.zip
  extracting: tl_2016_us_primaryroads.cpg  
   inflating: tl_2016_us_primaryroads.dbf  
@@ -525,8 +526,8 @@ Archive:  tl_2016_us_primaryroads.zip
 </div>
 </div>
 </section>
-<section id="add-the-insterstate-date-as-a-feature">
-<h4>Add the Insterstate Date as a feature<a class="headerlink" href="#add-the-insterstate-date-as-a-feature" title="Permalink to this headline">#</a></h4>
+<section id="add-the-interstate-date-as-a-feature">
+<h4>Add the Interstate Date as a feature<a class="headerlink" href="#add-the-interstate-date-as-a-feature" title="Permalink to this headline">#</a></h4>
 <p>We can add this data as a feature to be used on the maps using Shapely</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
