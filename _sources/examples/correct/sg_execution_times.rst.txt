@@ -6,10 +6,10 @@
 
 Computation times
 =================
-**02:02.803** total execution time for **examples_correct** files:
+**01:50.427** total execution time for **examples_correct** files:
 
 +--------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_correct_plot_dealias.py` (``plot_dealias.py``)         | 01:48.818 | 0.0 MB |
+| :ref:`sphx_glr_examples_correct_plot_dealias.py` (``plot_dealias.py``)         | 01:36.403 | 0.0 MB |
 +--------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_correct_plot_attenuation.py` (``plot_attenuation.py``) | 00:13.985 | 0.0 MB |
+| :ref:`sphx_glr_examples_correct_plot_attenuation.py` (``plot_attenuation.py``) | 00:14.024 | 0.0 MB |
 +--------------------------------------------------------------------------------+-----------+--------+
