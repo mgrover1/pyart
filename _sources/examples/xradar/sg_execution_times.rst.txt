@@ -6,12 +6,12 @@
 
 Computation times
 =================
-**00:33.061** total execution time for **examples_xradar** files:
+**00:19.200** total execution time for **examples_xradar** files:
 
 +-------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_xradar_plot_dealias_xradar.py` (``plot_dealias_xradar.py``) | 00:17.596 | 0.0 MB |
+| :ref:`sphx_glr_examples_xradar_plot_dealias_xradar.py` (``plot_dealias_xradar.py``) | 00:10.451 | 0.0 MB |
 +-------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_xradar_plot_grid_xradar.py` (``plot_grid_xradar.py``)       | 00:08.890 | 0.0 MB |
+| :ref:`sphx_glr_examples_xradar_plot_grid_xradar.py` (``plot_grid_xradar.py``)       | 00:05.092 | 0.0 MB |
 +-------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_xradar_plot_xradar.py` (``plot_xradar.py``)                 | 00:06.576 | 0.0 MB |
+| :ref:`sphx_glr_examples_xradar_plot_xradar.py` (``plot_xradar.py``)                 | 00:03.658 | 0.0 MB |
 +-------------------------------------------------------------------------------------+-----------+--------+
