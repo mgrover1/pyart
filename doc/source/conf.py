@@ -154,7 +154,14 @@ html_theme_options = {
     "analytics": {"google_analytics_id": "G-JJEG3CV376"},
     "github_url": "https://github.com/ARM-DOE/pyart",
     "twitter_url": "https://twitter.com/Py_ART",
+    "switcher": {
+        "json_url": "https://scipy.github.io/devdocs/_static/version_switcher.json",
+        "version_match": version,
+    },
 }
+
+if "post" in version:
+    html_theme_options["switcher"]["version_match"] = "dev"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "1.16 (stable)",
+        "version": "stable",
+        "url": "https://arm-doe.github.io/pyart/stable/"
+    },
+    {
+        "name": "1.16 (dev)",
+        "version": "dev",
+        "url": "https://arm-doe.github.io/pyart/dev"
+    }
+]
