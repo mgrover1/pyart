@@ -1,14 +1,13 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-theme="light">
+<html lang="en" data-content_root="../../../" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pyart.retrieve.echo_class &#8212; Py-ART 1.11.1.post494 documentation</title>
+    <title>pyart.retrieve.echo_class &#8212; Py-ART 1.11.1.post495 documentation</title>
   
   
   
@@ -18,42 +17,38 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pyart-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pyart-theme.css?v=40b48845" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/sphinx_highlight.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/documentation_options.js?v=f5990120"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-JJEG3CV376"></script>
     <script>
@@ -62,8 +57,14 @@
                 gtag('js', new Date());
                 gtag('config', 'G-JJEG3CV376');
             </script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-JJEG3CV376');
+            </script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pyart/retrieve/echo_class';</script>
-    <script src="../../../_static/doc_shared.js"></script>
+    <script src="../../../_static/doc_shared.js?v=6c7402a7"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 
@@ -140,6 +141,7 @@
   <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
   
 
 <a class="navbar-brand logo" href="../../../index.html">
@@ -149,7 +151,7 @@
   
   
   
-    <p class="title logo__title">Py-ART 1.11.1.post494 documentation</p>
+    <p class="title logo__title">Py-ART 1.11.1.post495 documentation</p>
   
 </a></div>
     
@@ -159,7 +161,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -234,6 +237,7 @@
       
         <div class="navbar-item navbar-persistent--container">
           
+
  <script>
  document.write(`
    <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -247,6 +251,7 @@
       
       
         <div class="navbar-item">
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -291,6 +296,7 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
+
  <script>
  document.write(`
    <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -320,7 +326,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -395,6 +402,7 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -500,10 +508,12 @@ document.write(`
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">..config</span> <span class="kn">import</span> <span class="n">get_field_name</span><span class="p">,</span> <span class="n">get_fillvalue</span><span class="p">,</span> <span class="n">get_metadata</span>
-<span class="kn">from</span> <span class="nn">._echo_class</span> <span class="kn">import</span> <span class="n">_revised_conv_strat</span><span class="p">,</span> <span class="n">steiner_class_buff</span>
+<span class="kn">from</span> <span class="nn">._echo_class</span> <span class="kn">import</span> <span class="n">_feature_detection</span><span class="p">,</span> <span class="n">steiner_class_buff</span>
 
 
-<div class="viewcode-block" id="steiner_conv_strat"><a class="viewcode-back" href="../../../API/generated/pyart.retrieve.steiner_conv_strat.html#pyart.retrieve.steiner_conv_strat">[docs]</a><span class="k">def</span> <span class="nf">steiner_conv_strat</span><span class="p">(</span>
+<div class="viewcode-block" id="steiner_conv_strat">
+<a class="viewcode-back" href="../../../API/generated/pyart.retrieve.steiner_conv_strat.html#pyart.retrieve.steiner_conv_strat">[docs]</a>
+<span class="k">def</span> <span class="nf">steiner_conv_strat</span><span class="p">(</span>
     <span class="n">grid</span><span class="p">,</span>
     <span class="n">dx</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">dy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -617,7 +627,10 @@ document.write(`
     <span class="p">}</span></div>
 
 
-<div class="viewcode-block" id="conv_strat_yuter"><a class="viewcode-back" href="../../../API/generated/pyart.retrieve.conv_strat_yuter.html#pyart.retrieve.conv_strat_yuter">[docs]</a><span class="k">def</span> <span class="nf">conv_strat_yuter</span><span class="p">(</span>
+
+<div class="viewcode-block" id="conv_strat_yuter">
+<a class="viewcode-back" href="../../../API/generated/pyart.retrieve.conv_strat_yuter.html#pyart.retrieve.conv_strat_yuter">[docs]</a>
+<span class="k">def</span> <span class="nf">conv_strat_yuter</span><span class="p">(</span>
     <span class="n">grid</span><span class="p">,</span>
     <span class="n">dx</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">dy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -737,14 +750,194 @@ document.write(`
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="c1"># Maxmimum convective radius must be less than 5 km</span>
-    <span class="k">if</span> <span class="n">max_conv_rad_km</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max conv radius must be less than 5 km, exiting&quot;</span><span class="p">)</span>
+    <span class="n">warn</span><span class="p">(</span>
+        <span class="s2">&quot;This function will be deprecated in Py-ART 2.0.&quot;</span>
+        <span class="s2">&quot; Please use feature_detection function.&quot;</span><span class="p">,</span>
+        <span class="ne">DeprecationWarning</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">feature_dict</span> <span class="o">=</span> <span class="n">feature_detection</span><span class="p">(</span>
+        <span class="n">grid</span><span class="p">,</span>
+        <span class="n">dx</span><span class="o">=</span><span class="n">dx</span><span class="p">,</span>
+        <span class="n">dy</span><span class="o">=</span><span class="n">dy</span><span class="p">,</span>
+        <span class="n">level_m</span><span class="o">=</span><span class="n">level_m</span><span class="p">,</span>
+        <span class="n">always_core_thres</span><span class="o">=</span><span class="n">always_core_thres</span><span class="p">,</span>
+        <span class="n">bkg_rad_km</span><span class="o">=</span><span class="n">bkg_rad_km</span><span class="p">,</span>
+        <span class="n">use_cosine</span><span class="o">=</span><span class="n">use_cosine</span><span class="p">,</span>
+        <span class="n">max_diff</span><span class="o">=</span><span class="n">max_diff</span><span class="p">,</span>
+        <span class="n">zero_diff_cos_val</span><span class="o">=</span><span class="n">zero_diff_cos_val</span><span class="p">,</span>
+        <span class="n">scalar_diff</span><span class="o">=</span><span class="n">scalar_diff</span><span class="p">,</span>
+        <span class="n">use_addition</span><span class="o">=</span><span class="n">use_addition</span><span class="p">,</span>
+        <span class="n">calc_thres</span><span class="o">=</span><span class="n">calc_thres</span><span class="p">,</span>
+        <span class="n">weak_echo_thres</span><span class="o">=</span><span class="n">weak_echo_thres</span><span class="p">,</span>
+        <span class="n">min_val_used</span><span class="o">=</span><span class="n">min_dBZ_used</span><span class="p">,</span>
+        <span class="n">dB_averaging</span><span class="o">=</span><span class="n">dB_averaging</span><span class="p">,</span>
+        <span class="n">remove_small_objects</span><span class="o">=</span><span class="n">remove_small_objects</span><span class="p">,</span>
+        <span class="n">min_km2_size</span><span class="o">=</span><span class="n">min_km2_size</span><span class="p">,</span>
+        <span class="n">binary_close</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">val_for_max_rad</span><span class="o">=</span><span class="n">val_for_max_conv_rad</span><span class="p">,</span>
+        <span class="n">max_rad_km</span><span class="o">=</span><span class="n">max_conv_rad_km</span><span class="p">,</span>
+        <span class="n">core_val</span><span class="o">=</span><span class="n">cs_core</span><span class="p">,</span>
+        <span class="n">nosfcecho</span><span class="o">=</span><span class="n">nosfcecho</span><span class="p">,</span>
+        <span class="n">weakecho</span><span class="o">=</span><span class="n">weakecho</span><span class="p">,</span>
+        <span class="n">bkgd_val</span><span class="o">=</span><span class="n">sf</span><span class="p">,</span>
+        <span class="n">feat_val</span><span class="o">=</span><span class="n">conv</span><span class="p">,</span>
+        <span class="n">field</span><span class="o">=</span><span class="n">refl_field</span><span class="p">,</span>
+        <span class="n">estimate_flag</span><span class="o">=</span><span class="n">estimate_flag</span><span class="p">,</span>
+        <span class="n">estimate_offset</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">overest_field</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">underest_field</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">feature_dict</span></div>
+
+
+
+<div class="viewcode-block" id="feature_detection">
+<a class="viewcode-back" href="../../../API/generated/pyart.retrieve.feature_detection.html#pyart.retrieve.feature_detection">[docs]</a>
+<span class="k">def</span> <span class="nf">feature_detection</span><span class="p">(</span>
+    <span class="n">grid</span><span class="p">,</span>
+    <span class="n">dx</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">dy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">level_m</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">always_core_thres</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+    <span class="n">bkg_rad_km</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span>
+    <span class="n">use_cosine</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">max_diff</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">zero_diff_cos_val</span><span class="o">=</span><span class="mi">55</span><span class="p">,</span>
+    <span class="n">scalar_diff</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">use_addition</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">calc_thres</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span>
+    <span class="n">weak_echo_thres</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>
+    <span class="n">min_val_used</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>
+    <span class="n">dB_averaging</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">remove_small_objects</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">min_km2_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">binary_close</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">val_for_max_rad</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+    <span class="n">max_rad_km</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>
+    <span class="n">core_val</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">nosfcecho</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">weakecho</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">bkgd_val</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">feat_val</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">field</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">estimate_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">estimate_offset</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">overest_field</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">underest_field</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function can be used to detect features in a field (e.g. reflectivity, rain rate, snow rate,</span>
+<span class="sd">    etc.) described by Tomkins et al. (2023) and based on original convective-stratiform algorithms developed by</span>
+<span class="sd">    Steiner et al. (1995), Yuter et al. (2005) and Yuter and Houze (1997) algorithm.</span>
+
+<span class="sd">    Author: Laura Tomkins (@lauratomkins)</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    grid : Grid</span>
+<span class="sd">        Grid containing reflectivity field to partition.</span>
+<span class="sd">    dx, dy : float, optional</span>
+<span class="sd">        The x- and y-dimension resolutions in meters, respectively. If None</span>
+<span class="sd">        the resolution is determined from the first two axes values parsed from grid object.</span>
+<span class="sd">    level_m : float, optional</span>
+<span class="sd">        Desired height in meters to run feature detection algorithm.</span>
+<span class="sd">    always_core_thres : float, optional</span>
+<span class="sd">        Threshold for points that are always features. All values above the threshold are classified as features.</span>
+<span class="sd">    bkg_rad_km : float, optional</span>
+<span class="sd">        Radius to compute background reflectivity in kilometers. Default is 11 km. Recommended to be at least 3 x</span>
+<span class="sd">        grid spacing</span>
+<span class="sd">    use_cosine : bool, optional</span>
+<span class="sd">        Boolean used to determine if a cosine scheme (see Yuter and Houze (1997)) should be used for identifying</span>
+<span class="sd">        cores (True) or if a simpler scalar scheme (False) should be used.</span>
+<span class="sd">    max_diff : float, optional</span>
+<span class="sd">        Maximum difference between background average and reflectivity in order to be classified as features.</span>
+<span class="sd">        &quot;a&quot; value in Eqn. B1 in Yuter and Houze (1997)</span>
+<span class="sd">    zero_diff_cos_val : float, optional</span>
+<span class="sd">        Value where difference between background average and reflectivity is zero in the cosine function</span>
+<span class="sd">        &quot;b&quot; value in Eqn. B1 in Yuter and Houze (1997)</span>
+<span class="sd">    scalar_diff : float, optional</span>
+<span class="sd">        If using a scalar difference scheme, this value is the multiplier or addition to the background average</span>
+<span class="sd">    use_addition : bool, optional</span>
+<span class="sd">        Determines if a multiplier (False) or addition (True) in the scalar difference scheme should be used</span>
+<span class="sd">    calc_thres : float, optional</span>
+<span class="sd">        Minimum percentage of points needed to be considered in background average calculation</span>
+<span class="sd">    weak_echo_thres : float, optional</span>
+<span class="sd">        Threshold for determining weak echo. All values below this threshold will be considered weak echo</span>
+<span class="sd">    min_val_used : float, optional</span>
+<span class="sd">        Minimum value used for classification. All values below this threshold will be considered no surface echo</span>
+<span class="sd">        See Yuter and Houze (1997) and Yuter et al. (2005) for more detail. Units based on input field</span>
+<span class="sd">    dB_averaging : bool, optional</span>
+<span class="sd">        True if using dBZ reflectivity values that need to be converted to linear Z before averaging. False for</span>
+<span class="sd">        other non-dBZ values (i.e. snow rate)</span>
+<span class="sd">    remove_small_objects : bool, optional</span>
+<span class="sd">        Determines if small objects should be removed from core array. Default is True.</span>
+<span class="sd">    min_km2_size : float, optional</span>
+<span class="sd">        Minimum size of Cores to be considered. Cores less than this size will be removed. Default is 10 km^2.</span>
+<span class="sd">    binary_close : bool, optional</span>
+<span class="sd">        Determines if a binary closing should be performed on the cores. Default is False.</span>
+<span class="sd">    val_for_max_rad : float, optional</span>
+<span class="sd">        value used for maximum radius. Cores with values above this will have the maximum radius incorporated.</span>
+<span class="sd">    max_rad_km : float, optional</span>
+<span class="sd">        Maximum radius around cores to classify as feature. Default is 5 km</span>
+<span class="sd">    core_val : int, optional</span>
+<span class="sd">        Value for points classified as cores</span>
+<span class="sd">    nosfcecho : int, optional</span>
+<span class="sd">        Value for points classified as no surface echo, based on min_val_used</span>
+<span class="sd">    weakecho : int, optional</span>
+<span class="sd">        Value for points classified as weak echo, based on weak_echo_thres.</span>
+<span class="sd">    bkgd_val : int, optional</span>
+<span class="sd">        Value for points classified as background echo.</span>
+<span class="sd">    feat_val : int, optional</span>
+<span class="sd">        Value for points classified as features.</span>
+<span class="sd">    field : str, optional</span>
+<span class="sd">        Field in grid to find objects in. None will use the default reflectivity field name from the Py-ART</span>
+<span class="sd">        configuration file.</span>
+<span class="sd">    estimate_flag : bool, optional</span>
+<span class="sd">        Determines if over/underestimation should be applied. If true, the algorithm will also be run on the same field</span>
+<span class="sd">        wih the estimate_offset added and the same field with the estimate_offset subtracted.</span>
+<span class="sd">        Default is True (recommended)</span>
+<span class="sd">    estimate_offset : float, optional</span>
+<span class="sd">        Value used to offset the field values by for the over/underestimation application. Default value is 5 dBZ.</span>
+<span class="sd">    overest_field : str, optional</span>
+<span class="sd">        Name of field in grid object used to calculate the overestimate if estimate_flag is True.</span>
+<span class="sd">    underest_field : str, optional</span>
+<span class="sd">        Name of field in grid object used to calculate the underestimate if estimate_flag is True.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    feature_dict : dict</span>
+<span class="sd">        Feature detection classification dictionary.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Steiner, M. R., R. A. Houze Jr., and S. E. Yuter, 1995: Climatological</span>
+<span class="sd">    Characterization of Three-Dimensional Storm Structure from Operational</span>
+<span class="sd">    Radar and Rain Gauge Data. J. Appl. Meteor., 34, 1978-2007.</span>
+
+<span class="sd">    Yuter, S. E., and R. A. Houze, Jr., 1997: Measurements of raindrop size</span>
+<span class="sd">    distributions over the Pacific warm pool and implications for Z-R relations.</span>
+<span class="sd">    J. Appl. Meteor., 36, 847-867.</span>
+<span class="sd">    https://doi.org/10.1175/1520-0450(1997)036%3C0847:MORSDO%3E2.0.CO;2</span>
+
+<span class="sd">    Yuter, S. E., R. A. Houze, Jr., E. A. Smith, T. T. Wilheit, and E. Zipser,</span>
+<span class="sd">    2005: Physical characterization of tropical oceanic convection observed in</span>
+<span class="sd">    KWAJEX. J. Appl. Meteor., 44, 385-415. https://doi.org/10.1175/JAM2206.1</span>
+
+<span class="sd">    Tomkins, L. M., S. E. Yuter, and M. A. Miller, 2024: Objective identification</span>
+<span class="sd">    of faint and strong features in radar observations of winter storms. in prep.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Maxmimum radius must be less than 5 km</span>
+    <span class="k">if</span> <span class="n">max_rad_km</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max radius must be less than 5 km, exiting&quot;</span><span class="p">)</span>
         <span class="k">raise</span>
 
     <span class="c1"># Parse field parameters</span>
-    <span class="k">if</span> <span class="n">refl_field</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">refl_field</span> <span class="o">=</span> <span class="n">get_field_name</span><span class="p">(</span><span class="s2">&quot;reflectivity&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">field</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">field</span> <span class="o">=</span> <span class="n">get_field_name</span><span class="p">(</span><span class="s2">&quot;reflectivity&quot;</span><span class="p">)</span>
         <span class="n">dB_averaging</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="c1"># parse dx and dy if None</span>
@@ -766,15 +959,15 @@ document.write(`
     <span class="c1"># Get reflectivity data at desired level</span>
     <span class="k">if</span> <span class="n">level_m</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">refl_field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+            <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">refl_field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][:,</span> <span class="p">:])</span>
+            <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][:,</span> <span class="p">:])</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">zslice</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span> <span class="o">-</span> <span class="n">level_m</span><span class="p">))</span>
-        <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">refl_field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="n">zslice</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+        <span class="n">ze</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="n">zslice</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
 
-    <span class="c1"># run convective stratiform algorithm</span>
-    <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">convsf_best</span> <span class="o">=</span> <span class="n">_revised_conv_strat</span><span class="p">(</span>
+    <span class="c1"># run feature detection algorithm</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">feature_best</span> <span class="o">=</span> <span class="n">_feature_detection</span><span class="p">(</span>
         <span class="n">ze</span><span class="p">,</span>
         <span class="n">dx</span><span class="p">,</span>
         <span class="n">dy</span><span class="p">,</span>
@@ -787,43 +980,47 @@ document.write(`
         <span class="n">use_addition</span><span class="o">=</span><span class="n">use_addition</span><span class="p">,</span>
         <span class="n">calc_thres</span><span class="o">=</span><span class="n">calc_thres</span><span class="p">,</span>
         <span class="n">weak_echo_thres</span><span class="o">=</span><span class="n">weak_echo_thres</span><span class="p">,</span>
-        <span class="n">min_dBZ_used</span><span class="o">=</span><span class="n">min_dBZ_used</span><span class="p">,</span>
+        <span class="n">min_val_used</span><span class="o">=</span><span class="n">min_val_used</span><span class="p">,</span>
         <span class="n">dB_averaging</span><span class="o">=</span><span class="n">dB_averaging</span><span class="p">,</span>
         <span class="n">remove_small_objects</span><span class="o">=</span><span class="n">remove_small_objects</span><span class="p">,</span>
         <span class="n">min_km2_size</span><span class="o">=</span><span class="n">min_km2_size</span><span class="p">,</span>
-        <span class="n">val_for_max_conv_rad</span><span class="o">=</span><span class="n">val_for_max_conv_rad</span><span class="p">,</span>
-        <span class="n">max_conv_rad_km</span><span class="o">=</span><span class="n">max_conv_rad_km</span><span class="p">,</span>
-        <span class="n">cs_core</span><span class="o">=</span><span class="n">cs_core</span><span class="p">,</span>
+        <span class="n">binary_close</span><span class="o">=</span><span class="n">binary_close</span><span class="p">,</span>
+        <span class="n">val_for_max_rad</span><span class="o">=</span><span class="n">val_for_max_rad</span><span class="p">,</span>
+        <span class="n">max_rad_km</span><span class="o">=</span><span class="n">max_rad_km</span><span class="p">,</span>
+        <span class="n">core_val</span><span class="o">=</span><span class="n">core_val</span><span class="p">,</span>
         <span class="n">nosfcecho</span><span class="o">=</span><span class="n">nosfcecho</span><span class="p">,</span>
         <span class="n">weakecho</span><span class="o">=</span><span class="n">weakecho</span><span class="p">,</span>
-        <span class="n">sf</span><span class="o">=</span><span class="n">sf</span><span class="p">,</span>
-        <span class="n">conv</span><span class="o">=</span><span class="n">conv</span><span class="p">,</span>
+        <span class="n">bkgd_val</span><span class="o">=</span><span class="n">bkgd_val</span><span class="p">,</span>
+        <span class="n">feat_val</span><span class="o">=</span><span class="n">feat_val</span><span class="p">,</span>
     <span class="p">)</span>
 
     <span class="c1"># put data into a dictionary to be added as a field</span>
-    <span class="n">convsf_dict</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;convsf&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">convsf_best</span><span class="p">,</span>
-            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;convsf&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Convective stratiform classification&quot;</span><span class="p">,</span>
+    <span class="n">feature_dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;feature_detection&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">feature_best</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span>
+            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;feature_detection&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature Detection&quot;</span><span class="p">,</span>
             <span class="s2">&quot;valid_min&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
             <span class="s2">&quot;valid_max&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
             <span class="s2">&quot;comment_1&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;Convective-stratiform echo &quot;</span>
-                <span class="s2">&quot;classification based on &quot;</span>
-                <span class="s2">&quot;Yuter and Houze (1997) and Yuter et al. (2005)&quot;</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;comment_2&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;0 = No surface echo/Undefined, 1 = Stratiform, &quot;</span>
-                <span class="s2">&quot;2 = Convective, 3 = weak echo&quot;</span>
+                <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> = No surface echo/Undefined, </span><span class="si">{}</span><span class="s2"> = Background echo, </span><span class="si">{}</span><span class="s2"> = Features, </span><span class="si">{}</span><span class="s2"> = weak echo&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">nosfcecho</span><span class="p">,</span> <span class="n">bkgd_val</span><span class="p">,</span> <span class="n">feat_val</span><span class="p">,</span> <span class="n">weakecho</span>
+                <span class="p">)</span>
             <span class="p">),</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="c1"># If estimation is True, run the algorithm on the field with offset subtracted and the field with the offset added</span>
     <span class="k">if</span> <span class="n">estimate_flag</span><span class="p">:</span>
-        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">convsf_under</span> <span class="o">=</span> <span class="n">_revised_conv_strat</span><span class="p">(</span>
-            <span class="n">ze</span> <span class="o">-</span> <span class="n">estimate_offset</span><span class="p">,</span>
+        <span class="c1"># get underestimate field</span>
+        <span class="k">if</span> <span class="n">underest_field</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">under_field</span> <span class="o">=</span> <span class="n">ze</span> <span class="o">-</span> <span class="n">estimate_offset</span>
+        <span class="k">elif</span> <span class="n">underest_field</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">under_field</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">underest_field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+
+        <span class="c1"># run algorithm to get feature detection underestimate</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">feature_under</span> <span class="o">=</span> <span class="n">_feature_detection</span><span class="p">(</span>
+            <span class="n">under_field</span><span class="p">,</span>
             <span class="n">dx</span><span class="p">,</span>
             <span class="n">dy</span><span class="p">,</span>
             <span class="n">always_core_thres</span><span class="o">=</span><span class="n">always_core_thres</span><span class="p">,</span>
@@ -835,21 +1032,29 @@ document.write(`
             <span class="n">use_addition</span><span class="o">=</span><span class="n">use_addition</span><span class="p">,</span>
             <span class="n">calc_thres</span><span class="o">=</span><span class="n">calc_thres</span><span class="p">,</span>
             <span class="n">weak_echo_thres</span><span class="o">=</span><span class="n">weak_echo_thres</span><span class="p">,</span>
-            <span class="n">min_dBZ_used</span><span class="o">=</span><span class="n">min_dBZ_used</span><span class="p">,</span>
+            <span class="n">min_val_used</span><span class="o">=</span><span class="n">min_val_used</span><span class="p">,</span>
             <span class="n">dB_averaging</span><span class="o">=</span><span class="n">dB_averaging</span><span class="p">,</span>
             <span class="n">remove_small_objects</span><span class="o">=</span><span class="n">remove_small_objects</span><span class="p">,</span>
             <span class="n">min_km2_size</span><span class="o">=</span><span class="n">min_km2_size</span><span class="p">,</span>
-            <span class="n">val_for_max_conv_rad</span><span class="o">=</span><span class="n">val_for_max_conv_rad</span><span class="p">,</span>
-            <span class="n">max_conv_rad_km</span><span class="o">=</span><span class="n">max_conv_rad_km</span><span class="p">,</span>
-            <span class="n">cs_core</span><span class="o">=</span><span class="n">cs_core</span><span class="p">,</span>
+            <span class="n">binary_close</span><span class="o">=</span><span class="n">binary_close</span><span class="p">,</span>
+            <span class="n">val_for_max_rad</span><span class="o">=</span><span class="n">val_for_max_rad</span><span class="p">,</span>
+            <span class="n">max_rad_km</span><span class="o">=</span><span class="n">max_rad_km</span><span class="p">,</span>
+            <span class="n">core_val</span><span class="o">=</span><span class="n">core_val</span><span class="p">,</span>
             <span class="n">nosfcecho</span><span class="o">=</span><span class="n">nosfcecho</span><span class="p">,</span>
             <span class="n">weakecho</span><span class="o">=</span><span class="n">weakecho</span><span class="p">,</span>
-            <span class="n">sf</span><span class="o">=</span><span class="n">sf</span><span class="p">,</span>
-            <span class="n">conv</span><span class="o">=</span><span class="n">conv</span><span class="p">,</span>
+            <span class="n">bkgd_val</span><span class="o">=</span><span class="n">bkgd_val</span><span class="p">,</span>
+            <span class="n">feat_val</span><span class="o">=</span><span class="n">feat_val</span><span class="p">,</span>
         <span class="p">)</span>
 
-        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">convsf_over</span> <span class="o">=</span> <span class="n">_revised_conv_strat</span><span class="p">(</span>
-            <span class="n">ze</span> <span class="o">+</span> <span class="n">estimate_offset</span><span class="p">,</span>
+        <span class="c1"># get overestimate field</span>
+        <span class="k">if</span> <span class="n">overest_field</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">over_field</span> <span class="o">=</span> <span class="n">ze</span> <span class="o">+</span> <span class="n">estimate_offset</span>
+        <span class="k">elif</span> <span class="n">overest_field</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">over_field</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">overest_field</span><span class="p">][</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+
+        <span class="c1"># run algorithm to get feature detection underestimate</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">feature_over</span> <span class="o">=</span> <span class="n">_feature_detection</span><span class="p">(</span>
+            <span class="n">over_field</span><span class="p">,</span>
             <span class="n">dx</span><span class="p">,</span>
             <span class="n">dy</span><span class="p">,</span>
             <span class="n">always_core_thres</span><span class="o">=</span><span class="n">always_core_thres</span><span class="p">,</span>
@@ -861,56 +1066,54 @@ document.write(`
             <span class="n">use_addition</span><span class="o">=</span><span class="n">use_addition</span><span class="p">,</span>
             <span class="n">calc_thres</span><span class="o">=</span><span class="n">calc_thres</span><span class="p">,</span>
             <span class="n">weak_echo_thres</span><span class="o">=</span><span class="n">weak_echo_thres</span><span class="p">,</span>
-            <span class="n">min_dBZ_used</span><span class="o">=</span><span class="n">min_dBZ_used</span><span class="p">,</span>
+            <span class="n">min_val_used</span><span class="o">=</span><span class="n">min_val_used</span><span class="p">,</span>
             <span class="n">dB_averaging</span><span class="o">=</span><span class="n">dB_averaging</span><span class="p">,</span>
             <span class="n">remove_small_objects</span><span class="o">=</span><span class="n">remove_small_objects</span><span class="p">,</span>
             <span class="n">min_km2_size</span><span class="o">=</span><span class="n">min_km2_size</span><span class="p">,</span>
-            <span class="n">val_for_max_conv_rad</span><span class="o">=</span><span class="n">val_for_max_conv_rad</span><span class="p">,</span>
-            <span class="n">max_conv_rad_km</span><span class="o">=</span><span class="n">max_conv_rad_km</span><span class="p">,</span>
-            <span class="n">cs_core</span><span class="o">=</span><span class="n">cs_core</span><span class="p">,</span>
+            <span class="n">binary_close</span><span class="o">=</span><span class="n">binary_close</span><span class="p">,</span>
+            <span class="n">val_for_max_rad</span><span class="o">=</span><span class="n">val_for_max_rad</span><span class="p">,</span>
+            <span class="n">max_rad_km</span><span class="o">=</span><span class="n">max_rad_km</span><span class="p">,</span>
+            <span class="n">core_val</span><span class="o">=</span><span class="n">core_val</span><span class="p">,</span>
             <span class="n">nosfcecho</span><span class="o">=</span><span class="n">nosfcecho</span><span class="p">,</span>
             <span class="n">weakecho</span><span class="o">=</span><span class="n">weakecho</span><span class="p">,</span>
-            <span class="n">sf</span><span class="o">=</span><span class="n">sf</span><span class="p">,</span>
-            <span class="n">conv</span><span class="o">=</span><span class="n">conv</span><span class="p">,</span>
+            <span class="n">bkgd_val</span><span class="o">=</span><span class="n">bkgd_val</span><span class="p">,</span>
+            <span class="n">feat_val</span><span class="o">=</span><span class="n">feat_val</span><span class="p">,</span>
         <span class="p">)</span>
 
         <span class="c1"># save into dictionaries</span>
-        <span class="n">convsf_dict</span><span class="p">[</span><span class="s2">&quot;convsf_under&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">convsf_under</span><span class="p">,</span>
-            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;convsf_under&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Convective stratiform classification (Underestimate)&quot;</span><span class="p">,</span>
+        <span class="n">feature_dict</span><span class="p">[</span><span class="s2">&quot;feature_under&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">feature_under</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span>
+            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;feature_detection_under&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature Detection Underestimate&quot;</span><span class="p">,</span>
             <span class="s2">&quot;valid_min&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
             <span class="s2">&quot;valid_max&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
             <span class="s2">&quot;comment_1&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;Convective-stratiform echo &quot;</span>
-                <span class="s2">&quot;classification based on &quot;</span>
-                <span class="s2">&quot;Yuter and Houze (1997) and Yuter et al. (2005)&quot;</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;comment_2&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;0 = Undefined, 1 = Stratiform, &quot;</span> <span class="s2">&quot;2 = Convective, 3 = weak echo&quot;</span>
+                <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> = No surface echo/Undefined, </span><span class="si">{}</span><span class="s2"> = Background echo, </span><span class="si">{}</span><span class="s2"> = Features, </span><span class="si">{}</span><span class="s2"> = weak echo&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">nosfcecho</span><span class="p">,</span> <span class="n">bkgd_val</span><span class="p">,</span> <span class="n">feat_val</span><span class="p">,</span> <span class="n">weakecho</span>
+                <span class="p">)</span>
             <span class="p">),</span>
         <span class="p">}</span>
 
-        <span class="n">convsf_dict</span><span class="p">[</span><span class="s2">&quot;convsf_over&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">convsf_over</span><span class="p">,</span>
-            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;convsf_under&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Convective stratiform classification (Overestimate)&quot;</span><span class="p">,</span>
+        <span class="n">feature_dict</span><span class="p">[</span><span class="s2">&quot;feature_over&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">feature_over</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span>
+            <span class="s2">&quot;standard_name&quot;</span><span class="p">:</span> <span class="s2">&quot;feature_detection_over&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;long_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature Detection Overestimate&quot;</span><span class="p">,</span>
             <span class="s2">&quot;valid_min&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
             <span class="s2">&quot;valid_max&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
             <span class="s2">&quot;comment_1&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;Convective-stratiform echo &quot;</span>
-                <span class="s2">&quot;classification based on &quot;</span>
-                <span class="s2">&quot;Yuter and Houze (1997)&quot;</span>
-            <span class="p">),</span>
-            <span class="s2">&quot;comment_2&quot;</span><span class="p">:</span> <span class="p">(</span>
-                <span class="s2">&quot;0 = Undefined, 1 = Stratiform, &quot;</span> <span class="s2">&quot;2 = Convective, 3 = weak echo&quot;</span>
+                <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> = No surface echo/Undefined, </span><span class="si">{}</span><span class="s2"> = Background echo, </span><span class="si">{}</span><span class="s2"> = Features, </span><span class="si">{}</span><span class="s2"> = weak echo&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">nosfcecho</span><span class="p">,</span> <span class="n">bkgd_val</span><span class="p">,</span> <span class="n">feat_val</span><span class="p">,</span> <span class="n">weakecho</span>
+                <span class="p">)</span>
             <span class="p">),</span>
         <span class="p">}</span>
 
-    <span class="k">return</span> <span class="n">convsf_dict</span></div>
+    <span class="k">return</span> <span class="n">feature_dict</span></div>
 
 
-<div class="viewcode-block" id="hydroclass_semisupervised"><a class="viewcode-back" href="../../../API/generated/pyart.retrieve.hydroclass_semisupervised.html#pyart.retrieve.hydroclass_semisupervised">[docs]</a><span class="k">def</span> <span class="nf">hydroclass_semisupervised</span><span class="p">(</span>
+
+<div class="viewcode-block" id="hydroclass_semisupervised">
+<a class="viewcode-back" href="../../../API/generated/pyart.retrieve.hydroclass_semisupervised.html#pyart.retrieve.hydroclass_semisupervised">[docs]</a>
+<span class="k">def</span> <span class="nf">hydroclass_semisupervised</span><span class="p">(</span>
     <span class="n">radar</span><span class="p">,</span>
     <span class="n">mass_centers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">weights</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]),</span>
@@ -1037,6 +1240,7 @@ document.write(`
     <span class="n">hydro</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">hydroclass_data</span>
 
     <span class="k">return</span> <span class="n">hydro</span></div>
+
 
 
 <span class="k">def</span> <span class="nf">_standardize</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="n">mx</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mn</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -1261,7 +1465,9 @@ document.write(`
     <span class="k">return</span> <span class="n">dlimits_dict</span>
 
 
-<div class="viewcode-block" id="get_freq_band"><a class="viewcode-back" href="../../../API/generated/pyart.retrieve.get_freq_band.html#pyart.retrieve.get_freq_band">[docs]</a><span class="k">def</span> <span class="nf">get_freq_band</span><span class="p">(</span><span class="n">freq</span><span class="p">):</span>
+<div class="viewcode-block" id="get_freq_band">
+<a class="viewcode-back" href="../../../API/generated/pyart.retrieve.get_freq_band.html#pyart.retrieve.get_freq_band">[docs]</a>
+<span class="k">def</span> <span class="nf">get_freq_band</span><span class="p">(</span><span class="n">freq</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the frequency band name (S, C, X, ...).</span>
 
@@ -1286,6 +1492,7 @@ document.write(`
     <span class="n">warn</span><span class="p">(</span><span class="s2">&quot;Unknown frequency band&quot;</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="kc">None</span></div>
+
 </pre></div>
 <div class="section ablog__blog_comments">
   
@@ -1299,7 +1506,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -1319,8 +1526,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1328,6 +1535,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2013-2022, Py-ART developers.
@@ -1337,8 +1545,9 @@ document.write(`
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     <br/>
   </p>
 </div>
@@ -1349,8 +1558,9 @@ document.write(`
   
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.3.
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>
