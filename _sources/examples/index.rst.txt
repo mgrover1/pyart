@@ -169,6 +169,23 @@ Mapping one or multiple radars from antenna coordinates to a Cartesian grid.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Map the reflectivity field of a single PPI sweep from Antenna (polar) coordinates to a Cartesia...">
+
+.. only:: html
+
+  .. image:: /examples/mapping/images/thumb/sphx_glr_plot_grid_single_sweep_ppi_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_mapping_plot_grid_single_sweep_ppi.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Map a single PPI sweep to a Cartesian grid using 2D weighting</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Map the reflectivity field of a single radar in Antenna coordinates to another radar in Antenna...">
 
 .. only:: html
@@ -572,6 +589,23 @@ Retrievals from various radars, such as additional fields or subsets of the data
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Calculate and Plot hydrometeor classification</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Creating a CFAD diagram">
+
+.. only:: html
+
+  .. image:: /examples/retrieve/images/thumb/sphx_glr_plot_cfad_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_retrieve_plot_cfad.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Creating a CFAD diagram</div>
     </div>
 
 
