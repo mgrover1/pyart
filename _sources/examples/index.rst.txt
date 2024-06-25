@@ -13,6 +13,9 @@ The files used in these examples are available for download_.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
+
+.. thumbnail-parent-div-close
 
 .. raw:: html
 
@@ -30,6 +33,7 @@ Performing radar moment corrections in antenna (radial) coordinates.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -65,6 +69,8 @@ Performing radar moment corrections in antenna (radial) coordinates.
     </div>
 
 
+.. thumbnail-parent-div-close
+
 .. raw:: html
 
     </div>
@@ -81,6 +87,7 @@ Reading/writing a variety of radar data using Py-ART.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -116,6 +123,8 @@ Reading/writing a variety of radar data using Py-ART.
     </div>
 
 
+.. thumbnail-parent-div-close
+
 .. raw:: html
 
     </div>
@@ -132,6 +141,7 @@ Mapping one or multiple radars from antenna coordinates to a Cartesian grid.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -201,6 +211,8 @@ Mapping one or multiple radars from antenna coordinates to a Cartesian grid.
     </div>
 
 
+.. thumbnail-parent-div-close
+
 .. raw:: html
 
     </div>
@@ -217,6 +229,7 @@ Plotting real world radar data with Py-ART.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -507,6 +520,8 @@ Plotting real world radar data with Py-ART.
     </div>
 
 
+.. thumbnail-parent-div-close
+
 .. raw:: html
 
     </div>
@@ -523,6 +538,7 @@ Retrievals from various radars, such as additional fields or subsets of the data
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -594,6 +610,23 @@ Retrievals from various radars, such as additional fields or subsets of the data
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip=" This script shows how to use hydrometeor classification for X-band radar data.  We are reading...">
+
+.. only:: html
+
+  .. image:: /examples/retrieve/images/thumb/sphx_glr_plot_hydrometeor_class_x_band_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_retrieve_plot_hydrometeor_class_x_band.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Hydrometeor Classification with Custom Frequency Settings</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Creating a CFAD diagram">
 
 .. only:: html
@@ -643,6 +676,8 @@ Retrievals from various radars, such as additional fields or subsets of the data
     </div>
 
 
+.. thumbnail-parent-div-close
+
 .. raw:: html
 
     </div>
@@ -659,6 +694,7 @@ Examples of using Xradar with Py-ART to accomplish different tasks.
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -710,6 +746,8 @@ Examples of using Xradar with Py-ART to accomplish different tasks.
       <div class="sphx-glr-thumbnail-title">Dealias Radial Velocities Using Xradar and Py-ART</div>
     </div>
 
+
+.. thumbnail-parent-div-close
 
 .. raw:: html
 
