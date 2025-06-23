@@ -65,7 +65,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Creating a CFAD diagram" href="plot_cfad.html" />
-    <link rel="prev" title="Calculate and Plot hydrometeor classification" href="plot_hydrometeor.html" /> 
+    <link rel="prev" title="Radar-Based Quantitative Precipitation Estimation (QPE)" href="plot_qpe.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="1.11" /> 
@@ -423,6 +423,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../io/index.html">Input/Output Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../io/plot_read_cfradial2.html">Read and Plot Cfradial2/FM301 data Using Xradar and Py-ART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/plot_nexrad_data_google_cloud.html">Reading NEXRAD Data from Google Cloud</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../io/plot_older_nexrad_data_aws.html">Reading Older NEXRAD Data and Fixing Latitude and Longitude Issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../io/plot_nexrad_data_aws.html">Reading NEXRAD Data from the AWS Cloud</a></li>
 </ul>
@@ -462,6 +463,7 @@
 <li class="toctree-l2"><a class="reference internal" href="plot_composite_reflectivity.html">Calculate and Plot Composite Reflectivity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_vad.html">Calculate and Plot VAD profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_hydrometeor.html">Calculate and Plot hydrometeor classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_qpe.html">Radar-Based Quantitative Precipitation Estimation (QPE)</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Hydrometeor Classification with Custom Frequency Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_cfad.html">Creating a CFAD diagram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_convective_stratiform.html">Convective-Stratiform classification</a></li>
@@ -582,12 +584,12 @@ classification to identify types of precipitation.</p>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylim.html#matplotlib.pyplot.ylim" title="matplotlib.pyplot.ylim" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax2</span></a> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax2</span></a> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;corrected_differential_reflectivity&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;pyart_Carbone42&quot;</span><span class="p">)</span>  <span class="c1"># ZDR</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax2</span></a> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;corrected_differential_reflectivity&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Carbone42&quot;</span><span class="p">)</span>  <span class="c1"># ZDR</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html#matplotlib.pyplot.xlim" title="matplotlib.pyplot.xlim" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylim.html#matplotlib.pyplot.ylim" title="matplotlib.pyplot.ylim" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 
 <span class="n">ax3</span> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot" title="matplotlib.pyplot.subplot" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">ax3</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;corrected_specific_diff_phase&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;pyart_Carbone42&quot;</span><span class="p">)</span>  <span class="c1"># KDP</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;corrected_specific_diff_phase&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Carbone42&quot;</span><span class="p">)</span>  <span class="c1"># KDP</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html#matplotlib.pyplot.xlim" title="matplotlib.pyplot.xlim" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 
 <span class="c1"># ### When instrument parameters does not have radar frequency info.</span>
@@ -779,7 +781,7 @@ classification to identify types of precipitation.</p>
 <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">display</span><span class="o">.</span><span class="n">cbs</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">adjust_fhc_colorbar_for_pyart</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">display</span><span class="o">.</span><span class="n">cbs</span></a><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 10.925 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 9.639 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-retrieve-plot-hydrometeor-class-x-band-py">
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/284155deb2676d4078d36e57fe980d9c/plot_hydrometeor_class_x_band.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_hydrometeor_class_x_band.ipynb</span></code></a></p>
@@ -808,12 +810,12 @@ classification to identify types of precipitation.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="plot_hydrometeor.html"
+       href="plot_qpe.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Calculate and Plot hydrometeor classification</p>
+        <p class="prev-next-title">Radar-Based Quantitative Precipitation Estimation (QPE)</p>
       </div>
     </a>
     <a class="right-next"

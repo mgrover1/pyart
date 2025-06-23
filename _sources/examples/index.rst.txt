@@ -142,6 +142,23 @@ Reading/writing a variety of radar data using Py-ART.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Within this example, we show how you can remotely access Next Generation Weather Radar (NEXRAD) Data from Google Cloud Storage and plot quick looks of the datasets.">
+
+.. only:: html
+
+  .. image:: /examples/io/images/thumb/sphx_glr_plot_nexrad_data_google_cloud_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_io_plot_nexrad_data_google_cloud.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Reading NEXRAD Data from Google Cloud</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="In this example, we will show how to read in older NEXRAD files prior to 2008 that are missing some coordinate metadata.">
 
 .. only:: html
@@ -707,6 +724,23 @@ Retrievals from various radars, such as additional fields or subsets of the data
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Calculate and Plot hydrometeor classification</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="- The column_profile function extracts a vertical profile at a given latitude/longitude. - The rain_rate_categorized function computes rain rates based on categorized reflectivity. - The script reads multiple radar files, processes them, and visualizes the results.">
+
+.. only:: html
+
+  .. image:: /examples/retrieve/images/thumb/sphx_glr_plot_qpe_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_retrieve_plot_qpe.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Radar-Based Quantitative Precipitation Estimation (QPE)</div>
     </div>
 
 
