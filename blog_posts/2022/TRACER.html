@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" data-theme="light">
+<html lang="en" data-content_root="../../" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Blending Observations from TRACER using Py-ART &#8212; Py-ART 1.11.1 documentation</title>
   
@@ -27,13 +27,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -42,14 +42,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pyart-theme.css?v=40b48845" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b0accced"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/documentation_options.js?v=c8897f99"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
@@ -57,18 +57,31 @@
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied'
+                });
                 gtag('js', new Date());
                 gtag('config', 'G-JJEG3CV376');
             </script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'blog_posts/2022/TRACER';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script src="../../_static/doc_shared.js?v=6c7402a7"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="1.11" /> 
+  <meta name="docsearch:version" content="1.11" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+   
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -77,19 +90,19 @@
 />
   
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
-
+  <body data-default-mode="light">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -115,7 +128,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -574,11 +587,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                    <section class="tex2jax_ignore mathjax_ignore" id="blending-observations-from-tracer-using-py-art">
-<h1>Blending Observations from TRACER using Py-ART<a class="headerlink" href="#blending-observations-from-tracer-using-py-art" title="Permalink to this heading">#</a></h1>
+<h1>Blending Observations from TRACER using Py-ART<a class="headerlink" href="#blending-observations-from-tracer-using-py-art" title="Link to this heading">#</a></h1>
 <p>The TRacking Aerosol Convection Interactions (TRACER) field experiment was a U.S. Department of Energy IOP with the goal of studying the lifecycle of convection over Houston as well as potential aerosol impacts on this lifecycle. Houston is uniquely suited for this kind of field experiment where seabreeze convection forms off of the coast of Houston in cleaner air conditions and then approaches the more polluted Houston region. For more information about the TRACER field experiment, click <a class="reference external" href="https://www.arm.gov/research/campaigns/amf2021tracer">here</a>.</p>
 <p>This post will show how to plot overlays of Texas A&amp;M University Lightning Mapping Array data over GOES and ARM CSAPR2 data for a case of wildfire smoke entraining into developing convection sampled during July 12 and 13, 2022. In addition, we highlight a case that was tracked by CSAPR2 for 90 minutes on June 17, 2022.</p>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pyart</span>
@@ -600,7 +613,7 @@
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="goes-data-access">
-<h1>GOES data access<a class="headerlink" href="#goes-data-access" title="Permalink to this heading">#</a></h1>
+<h1>GOES data access<a class="headerlink" href="#goes-data-access" title="Link to this heading">#</a></h1>
 <p>All of the NOAA GOES satellite data are available on Amazon Web Services for download. Therefore, you can use the s3fs tool to download the required data. We will download band 13, which is the longwave infrared band of GOES. In order to only download the band 13 files, we will ensure that there is a “C13” in the filename as this denotes the band number for each file.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1144,7 +1157,7 @@ Attributes: (12/30)
 </div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="csapr-data-access">
-<h1>CSAPR data access<a class="headerlink" href="#csapr-data-access" title="Permalink to this heading">#</a></h1>
+<h1>CSAPR data access<a class="headerlink" href="#csapr-data-access" title="Link to this heading">#</a></h1>
 <p>The a1-level CSAPR data are available for public use on <a class="reference external" href="https://adc.arm.gov/discovery/">ARM Data Disovery</a>. In addition, we can use the Atmospheric Community Toolkit to download the July 12 and 13 CSAPR data. The DOI for the CSAPR2 a1-level data is 10.5439/1467901, which if accessed will bring you to the download page on ARM Data Discovery.</p>
 <p>The first block of code below will look at the automated catalogue of CSAPR data created by Adam Theisen. This provides us with a view of what scanning mode the CSAPR was in for a given time period as well as the scanning geometry and precipitation coverage.</p>
 <div class="cell docutils container">
@@ -1550,7 +1563,7 @@ Attributes: (12/30)
 </div>
 </div>
 <section id="load-lma-flash-data">
-<h2>Load LMA Flash data<a class="headerlink" href="#load-lma-flash-data" title="Permalink to this heading">#</a></h2>
+<h2>Load LMA Flash data<a class="headerlink" href="#load-lma-flash-data" title="Link to this heading">#</a></h2>
 <p>Here we load the data from the Houston Lightning Mapping Array. The data are in standard netCDF format that is easily read by xarray.
 The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/codiac/fgr_form/id=100.016. Both the flash density data and locations of each flash are stored in the file.</p>
 <div class="cell docutils container">
@@ -1564,7 +1577,7 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
 </div>
 </section>
 <section id="june-17th-case">
-<h2>June 17th case<a class="headerlink" href="#june-17th-case" title="Permalink to this heading">#</a></h2>
+<h2>June 17th case<a class="headerlink" href="#june-17th-case" title="Link to this heading">#</a></h2>
 <p>This is a case of a storm that was tracked by CSAPR for about 90 minutes during the afternoon of June 17th 2022. We will use the same code from above to plot the radar/LMA overlays over the GOES IR radiance data for this case. This first block of code combines the above code to load and subset all of the necessary data for the overlays.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1657,7 +1670,7 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
 </div>
 </section>
 <section id="june-17-rhi">
-<h2>June 17 RHI<a class="headerlink" href="#june-17-rhi" title="Permalink to this heading">#</a></h2>
+<h2>June 17 RHI<a class="headerlink" href="#june-17-rhi" title="Link to this heading">#</a></h2>
 <p>We are also interested in the Range-Height Indicator scans provided by CSAPR2 as this cell evolves. The RHI scans will provide a vertical-cross section of the microphysical properties of the storm as it evolves. Finally, this block of code will plot the altitudes and locations of each lightning strike overlaid over the RHI scan. SciPy’s KDTree is used to find the nearest neighbors between the LMA lightning strike locations and the latitude and longitude locations of each gate in the RHI. After the nearest neighbors are found this provides us the altitude and range where the approximate location of the lightning strike would be.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1764,14 +1777,14 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Blending Observations from TRACER using Py-ART</a><ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Blending Observations from TRACER using Py-ART</a><ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goes-data-access">GOES data access</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#csapr-data-access">CSAPR data access</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#csapr-data-access">CSAPR data access</a><ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-lma-flash-data">Load LMA Flash data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#june-17th-case">June 17th case</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#june-17-rhi">June 17 RHI</a></li>
@@ -1782,13 +1795,13 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
   </nav></div>
 
   <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/blog_posts/2022/TRACER.ipynb.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/blog_posts/2022/TRACER.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
 
 </div></div>
               
@@ -1803,8 +1816,8 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1815,7 +1828,7 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
 
   <p class="copyright">
     
-      © Copyright 2013-2024, Py-ART developers.
+      © Copyright 2013-2026, Py-ART developers.
       <br/>
     
   </p>
@@ -1824,7 +1837,7 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
@@ -1838,7 +1851,7 @@ The data are currently available for order at https://data.eol.ucar.edu/cgi-bin/
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
 </p></div>
       
     </div>

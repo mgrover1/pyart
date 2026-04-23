@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" data-theme="light">
+<html lang="en" data-content_root="../../../" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
@@ -26,13 +26,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -41,14 +41,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pyart-theme.css?v=40b48845" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=b0accced"></script>
-    <script src="../../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/documentation_options.js?v=c8897f99"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
@@ -56,16 +56,29 @@
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied'
+                });
                 gtag('js', new Date());
                 gtag('config', 'G-JJEG3CV376');
             </script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pyart/graph/gridmapdisplay_basemap';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script src="../../../_static/doc_shared.js?v=6c7402a7"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="1.11" /> 
+  <meta name="docsearch:version" content="1.11" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+   
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -74,19 +87,19 @@
 />
   
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
-
+  <body data-default-mode="light">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -112,7 +125,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -478,7 +491,9 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">common</span>
 
 
-<div class="viewcode-block" id="GridMapDisplayBasemap"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.html#pyart.graph.GridMapDisplayBasemap">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">GridMapDisplayBasemap</span><span class="p">:</span>
+<div class="viewcode-block" id="GridMapDisplayBasemap">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.html#pyart.graph.GridMapDisplayBasemap">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">GridMapDisplayBasemap</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    A class for creating plots from a grid object on top of a Basemap.</span>
 
@@ -521,7 +536,9 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="s2">&quot;origin&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_basemap"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_basemap.html#pyart.graph.GridMapDisplayBasemap.plot_basemap">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_basemap</span><span class="p">(</span>
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_basemap">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_basemap.html#pyart.graph.GridMapDisplayBasemap.plot_basemap">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_basemap</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">lat_lines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">lon_lines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -533,7 +550,7 @@
         <span class="n">min_lat</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
         <span class="n">max_lat</span><span class="o">=</span><span class="mi">44</span><span class="p">,</span>
         <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot a basemap.</span>
@@ -573,7 +590,7 @@
             <span class="n">min_lat</span><span class="p">,</span>
             <span class="n">max_lat</span><span class="p">,</span>
             <span class="n">ax</span><span class="p">,</span>
-            <span class="o">**</span><span class="n">kwargs</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
         <span class="p">)</span>
 
         <span class="c1"># parse the parameters</span>
@@ -587,7 +604,10 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span><span class="o">.</span><span class="n">drawparallels</span><span class="p">(</span><span class="n">lat_lines</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">])</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span><span class="o">.</span><span class="n">drawmeridians</span><span class="p">(</span><span class="n">lon_lines</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">])</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_grid"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_grid.html#pyart.graph.GridMapDisplayBasemap.plot_grid">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_grid</span><span class="p">(</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_grid">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_grid.html#pyart.graph.GridMapDisplayBasemap.plot_grid">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_grid</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">field</span><span class="p">,</span>
         <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
@@ -608,7 +628,7 @@
         <span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticklabs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot the grid onto the current basemap.</span>
@@ -700,7 +720,7 @@
             <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span>
             <span class="n">norm</span><span class="o">=</span><span class="n">norm</span><span class="p">,</span>
             <span class="n">latlon</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-            <span class="o">**</span><span class="n">kwargs</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">mappables</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pm</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
@@ -728,7 +748,10 @@
 
         <span class="k">return</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_crosshairs"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_crosshairs.html#pyart.graph.GridMapDisplayBasemap.plot_crosshairs">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_crosshairs</span><span class="p">(</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_crosshairs">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_crosshairs.html#pyart.graph.GridMapDisplayBasemap.plot_crosshairs">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_crosshairs</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">line_style</span><span class="o">=</span><span class="s2">&quot;r--&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -763,7 +786,10 @@
         <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_lat</span><span class="p">,</span> <span class="n">y_lat</span><span class="p">,</span> <span class="n">line_style</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="n">linewidth</span><span class="p">)</span>
         <span class="k">return</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_latitude_slice"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_latitude_slice.html#pyart.graph.GridMapDisplayBasemap.plot_latitude_slice">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_latitude_slice</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_latitude_slice">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_latitude_slice.html#pyart.graph.GridMapDisplayBasemap.plot_latitude_slice">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_latitude_slice</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot a slice along a given latitude.</span>
 
@@ -783,7 +809,10 @@
         <span class="n">_</span><span class="p">,</span> <span class="n">y_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_nearest_grid_indices</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plot_latitudinal_level</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">field</span><span class="p">,</span> <span class="n">y_index</span><span class="o">=</span><span class="n">y_index</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_latitudinal_level"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_latitudinal_level.html#pyart.graph.GridMapDisplayBasemap.plot_latitudinal_level">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_latitudinal_level</span><span class="p">(</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_latitudinal_level">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_latitudinal_level.html#pyart.graph.GridMapDisplayBasemap.plot_latitudinal_level">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_latitudinal_level</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">field</span><span class="p">,</span>
         <span class="n">y_index</span><span class="p">,</span>
@@ -804,7 +833,7 @@
         <span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticklabs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot a slice along a given latitude.</span>
@@ -922,7 +951,10 @@
             <span class="p">)</span>
         <span class="k">return</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_longitude_slice"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_longitude_slice.html#pyart.graph.GridMapDisplayBasemap.plot_longitude_slice">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_longitude_slice</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_longitude_slice">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_longitude_slice.html#pyart.graph.GridMapDisplayBasemap.plot_longitude_slice">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_longitude_slice</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot a slice along a given longitude.</span>
 
@@ -941,7 +973,10 @@
         <span class="n">x_index</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_nearest_grid_indices</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plot_longitudinal_level</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">field</span><span class="p">,</span> <span class="n">x_index</span><span class="o">=</span><span class="n">x_index</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_longitudinal_level"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_longitudinal_level.html#pyart.graph.GridMapDisplayBasemap.plot_longitudinal_level">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_longitudinal_level</span><span class="p">(</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_longitudinal_level">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_longitudinal_level.html#pyart.graph.GridMapDisplayBasemap.plot_longitudinal_level">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_longitudinal_level</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">field</span><span class="p">,</span>
         <span class="n">x_index</span><span class="p">,</span>
@@ -962,7 +997,7 @@
         <span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">ticklabs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Plot a slice along a given longitude.</span>
@@ -1080,7 +1115,10 @@
             <span class="p">)</span>
         <span class="k">return</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.plot_colorbar"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_colorbar.html#pyart.graph.GridMapDisplayBasemap.plot_colorbar">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">plot_colorbar</span><span class="p">(</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.plot_colorbar">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.plot_colorbar.html#pyart.graph.GridMapDisplayBasemap.plot_colorbar">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_colorbar</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">mappable</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;horizontal&quot;</span><span class="p">,</span>
@@ -1146,6 +1184,7 @@
         <span class="n">cb</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
         <span class="k">return</span></div>
 
+
     <span class="k">def</span><span class="w"> </span><span class="nf">_make_basemap</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">resolution</span><span class="o">=</span><span class="s2">&quot;l&quot;</span><span class="p">,</span>
@@ -1156,7 +1195,7 @@
         <span class="n">min_lat</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
         <span class="n">max_lat</span><span class="o">=</span><span class="mi">44</span><span class="p">,</span>
         <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Make a basemap.</span>
@@ -1295,7 +1334,9 @@
     <span class="c1"># name generator methods #</span>
     <span class="c1">##########################</span>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.generate_filename"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_filename.html#pyart.graph.GridMapDisplayBasemap.generate_filename">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="GridMapDisplayBasemap.generate_filename">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_filename.html#pyart.graph.GridMapDisplayBasemap.generate_filename">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Generate a filename for a grid plot.</span>
 
@@ -1319,7 +1360,10 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">common</span><span class="o">.</span><span class="n">generate_grid_filename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">ext</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.generate_grid_title"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_grid_title.html#pyart.graph.GridMapDisplayBasemap.generate_grid_title">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_grid_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.generate_grid_title">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_grid_title.html#pyart.graph.GridMapDisplayBasemap.generate_grid_title">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate_grid_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Generate a title for a plot.</span>
 
@@ -1338,7 +1382,10 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">common</span><span class="o">.</span><span class="n">generate_grid_title</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.generate_longitudinal_level_title"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_longitudinal_level_title.html#pyart.graph.GridMapDisplayBasemap.generate_longitudinal_level_title">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_longitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.generate_longitudinal_level_title">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_longitudinal_level_title.html#pyart.graph.GridMapDisplayBasemap.generate_longitudinal_level_title">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate_longitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Generate a title for a plot.</span>
 
@@ -1357,7 +1404,10 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">common</span><span class="o">.</span><span class="n">generate_longitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.generate_latitudinal_level_title"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_latitudinal_level_title.html#pyart.graph.GridMapDisplayBasemap.generate_latitudinal_level_title">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_latitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+
+<div class="viewcode-block" id="GridMapDisplayBasemap.generate_latitudinal_level_title">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.generate_latitudinal_level_title.html#pyart.graph.GridMapDisplayBasemap.generate_latitudinal_level_title">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate_latitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Generate a title for a plot.</span>
 
@@ -1376,16 +1426,21 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">common</span><span class="o">.</span><span class="n">generate_latitudinal_level_title</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span></div>
 
+
     <span class="c1">##########################</span>
     <span class="c1">#      get methods       #</span>
     <span class="c1">##########################</span>
 
-<div class="viewcode-block" id="GridMapDisplayBasemap.get_basemap"><a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.get_basemap.html#pyart.graph.GridMapDisplayBasemap.get_basemap">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_basemap</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="GridMapDisplayBasemap.get_basemap">
+<a class="viewcode-back" href="../../../API/generated/pyart.graph.GridMapDisplayBasemap.get_basemap.html#pyart.graph.GridMapDisplayBasemap.get_basemap">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_basemap</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;get basemap of the plot&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_make_basemap</span><span class="p">()</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span></div></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">basemap</span></div>
+</div>
+
 </pre></div>
 <div class="section ablog__blog_comments">
    
@@ -1418,8 +1473,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1430,7 +1485,7 @@
 
   <p class="copyright">
     
-      © Copyright 2013-2024, Py-ART developers.
+      © Copyright 2013-2026, Py-ART developers.
       <br/>
     
   </p>
@@ -1439,7 +1494,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
@@ -1453,7 +1508,7 @@
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
 </p></div>
       
     </div>

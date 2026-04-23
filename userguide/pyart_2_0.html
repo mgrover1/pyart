@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" data-theme="light">
+<html lang="en" data-content_root="../" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Py-ART 2.0 &#8212; Py-ART 1.11.1 documentation</title>
   
@@ -27,13 +27,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -42,14 +42,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/pyart-theme.css?v=40b48845" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b0accced"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/documentation_options.js?v=c8897f99"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
@@ -57,18 +57,31 @@
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied'
+                });
                 gtag('js', new Date());
                 gtag('config', 'G-JJEG3CV376');
             </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/pyart_2_0';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script src="../_static/doc_shared.js?v=6c7402a7"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Installation" href="INSTALL.html" />
-    <link rel="prev" title="User Guide" href="index.html" /> 
+    <link rel="prev" title="Why Py-ART?" href="overview.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="1.11" /> 
+  <meta name="docsearch:version" content="1.11" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+   
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -77,19 +90,19 @@
 />
   
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
-
+  <body data-default-mode="light">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -115,7 +128,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -412,10 +425,12 @@
         <div class="sidebar-primary-item">
 <div id="searchbox"></div></div>
         <div class="sidebar-primary-item">
+
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Why Py-ART?</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Py-ART 2.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="INSTALL.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setting_up_an_environment.html">Setting up an Environment</a></li>
@@ -480,17 +495,17 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                    <section id="py-art-2-0">
-<h1>Py-ART 2.0<a class="headerlink" href="#py-art-2-0" title="Permalink to this heading">#</a></h1>
+<h1>Py-ART 2.0<a class="headerlink" href="#py-art-2-0" title="Link to this heading">#</a></h1>
 <p>In preparation for version 2.0.0 of Py-ART, codes were standardized for consistency purposes as further defined in the <a class="reference external" href="https://arm-doe.github.io/pyart/userguide/CONTRIBUTING.html">Contributor’s Guide</a>.  These changes will break some users code as the API has changed.  This guide will detail the changes for each module.</p>
 <section id="how-to-try-py-art-2-0">
-<h2>How to Try Py-ART 2.0<a class="headerlink" href="#how-to-try-py-art-2-0" title="Permalink to this heading">#</a></h2>
+<h2>How to Try Py-ART 2.0<a class="headerlink" href="#how-to-try-py-art-2-0" title="Link to this heading">#</a></h2>
 <p>The Py-ART 2.0 release candidate can be installed directly from github - this is still a work in progress, feedback is welcome!:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ARM</span><span class="o">-</span><span class="n">DOE</span><span class="o">/</span><span class="n">pyart</span><span class="nd">@release</span><span class="o">/</span><span class="mf">2.0</span>
 </pre></div>
 </div>
 </section>
 <section id="input-output-io">
-<h2>Input/Output (IO)<a class="headerlink" href="#input-output-io" title="Permalink to this heading">#</a></h2>
+<h2>Input/Output (IO)<a class="headerlink" href="#input-output-io" title="Link to this heading">#</a></h2>
 <p>We now offer the option to use xradar for IO, with the following interface (a typical gridding workflow is shown below):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xradar</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pyart</span>
@@ -516,12 +531,12 @@
 </div>
 </section>
 <section id="correct">
-<h2>Correct<a class="headerlink" href="#correct" title="Permalink to this heading">#</a></h2>
+<h2>Correct<a class="headerlink" href="#correct" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://arm-doe.github.io/pyart/API/generated/pyart.correct.dealias_fourdd.html">dealias_fourdd</a> algorithm has been removed given the now unsupported RSL library.</p>
 <p>It is recommended that users move to the <a class="reference external" href="https://arm-doe.github.io/pyart/API/generated/pyart.correct.dealias_region_based.html">region-based dealiasing algorithm</a>.</p>
 </section>
 <section id="graph">
-<h2>Graph<a class="headerlink" href="#graph" title="Permalink to this heading">#</a></h2>
+<h2>Graph<a class="headerlink" href="#graph" title="Link to this heading">#</a></h2>
 <p>Colormaps have been moved to a dedicated package outside Py-ART, <a class="reference external" href="https://cmweather.readthedocs.io/">cmweather</a>.</p>
 <p>For example, visualizing our grid mentioned previously, it is recommended to install/import cmweather and change the colormap name from <cite>pyart_ChaseSpectral</cite> to <cite>ChaseSpectral</cite></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">cmweather</span>
@@ -549,12 +564,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="overview.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">User Guide</p>
+        <p class="prev-next-title">Why Py-ART?</p>
       </div>
     </a>
     <a class="right-next"
@@ -583,8 +598,8 @@
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-try-py-art-2-0">How to Try Py-ART 2.0</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-output-io">Input/Output (IO)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correct">Correct</a></li>
@@ -593,13 +608,13 @@
   </nav></div>
 
   <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/userguide/pyart_2_0.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/userguide/pyart_2_0.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
 
 </div></div>
               
@@ -614,8 +629,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -626,7 +641,7 @@
 
   <p class="copyright">
     
-      © Copyright 2013-2024, Py-ART developers.
+      © Copyright 2013-2026, Py-ART developers.
       <br/>
     
   </p>
@@ -635,7 +650,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
@@ -649,7 +664,7 @@
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
 </p></div>
       
     </div>
