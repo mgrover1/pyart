@@ -53,7 +53,7 @@ handles, labels = axes[0].get_legend_handles_labels()
 order = [2, 1, 0]
 fig.legend([handles[i] for i in order], [labels[i] for i in order], loc="lower center", ncol=3, frameon=False, fontsize=9.5)
 fig.suptitle(
-    "Fixed vad_michelson matches vad_browning; the original runs far too low",
+    "Fixed vad_michelson vs vad_browning on two more NEXRAD cases",
     x=0.06, ha="left", fontsize=13, color=INK, weight="bold",
 )
 fig.text(

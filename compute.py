@@ -86,7 +86,7 @@ for i in sweeps:
     el = radar.fixed_angle["data"][i]
     with np.errstate(all="ignore"):
         sp_old, _ = vad_old._vad_calculation_m(vel, az, el)
-        sp_new, _ = vad_new._vad_calculation_m(vel, az, el)
+        sp_new = vad_new._vad_calculation_m(vel, az, el)[0]
     valid = 1.0 - np.ma.getmaskarray(vel).mean(axis=0)
     sp_old = np.ravel(np.ma.filled(sp_old, np.nan))
     ok = (valid >= 0.05) & np.isfinite(sp_old) & np.isfinite(sp_new) & (sp_new > 3.0)
